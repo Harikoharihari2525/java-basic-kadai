@@ -22,4 +22,3 @@ public abstract class Kato_Chapter18 {
         eachIntroduce();
     }
 }
-
