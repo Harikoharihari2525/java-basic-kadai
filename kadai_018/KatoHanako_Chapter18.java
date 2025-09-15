@@ -1,19 +1,12 @@
 package kadai_018;
 
-public class KatoExec_Chapter18 {
-	
-	public static void main(String[] args) {
-		
-		String familyName = "加藤";
-        String address = "東京都中野区〇×";
-		
-		KatoTaro_Chapter18 taro = new KatoTaro_Chapter18(familyName, address);
-		KatoIchiro_Chapter18 ichiro = new KatoIchiro_Chapter18(familyName, address);
-		KatoHanako_Chapter18 hanako = new KatoHanako_Chapter18(familyName, address);
-		
-		taro.execIntroduce();
-        ichiro.execIntroduce();
-        hanako.execIntroduce();
+public class KatoHanako_Chapter18 extends Kato_Chapter18{
+	public void setGivenName() {
+        this.givenName = "花子";
+    }
 
-	}
+    @Override
+    public void eachIntroduce() {
+        System.out.println("趣味は読書です");
+    }
 }
