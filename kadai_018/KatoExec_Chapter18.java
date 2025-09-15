@@ -1,14 +1,22 @@
 package kadai_018;
 
-public class KatoTaro_Chapter18 extends Kato_Chapter18 {
-	public KatoTaro_Chapter18(String familyName, String address) {
-        super(familyName, address);
-        this.givenName = "太郎";
-    }
+public class KatoExec_Chapter18 {
+    public static void main(String[] args) {
+        String familyName = "加藤";
+        String address = "東京都中野区〇×";
 
-    @Override
-    public void eachIntroduce() {
-        System.out.println("私はJavaが得意です");
+        KatoTaro_Chapter18 taro = new KatoTaro_Chapter18(familyName, address);
+        taro.execIntroduce();
+
+        System.out.println();
+
+        KatoIchiro_Chapter18 ichiro = new KatoIchiro_Chapter18(familyName, address);
+        ichiro.execIntroduce();
+
+        System.out.println();
+
+        KatoHanako_Chapter18 hanako = new KatoHanako_Chapter18(familyName, address);
+        hanako.execIntroduce();
     }
 }
 
